@@ -1,0 +1,25 @@
+#app{
+    scroll-behavior: smooth;
+}
+
+
+.active-class{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgb(250, 204, 21);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background:black;
+}
+.tooltip{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+.side-nav:hover .text-tool-tip{
+  width: auto;
+  left: 30px;
+}
+.nav-active{
+  width: auto;
+}
