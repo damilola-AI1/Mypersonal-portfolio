@@ -9,7 +9,7 @@ import Navigator from "../component/Navigator";
 const Homepage = () => {
 
 return (
-    <section id="home" className="home-circle bg-[#020202] w-full h-screen relative overflow-hidden">
+    <section id="home" className="home-circle bg-[#020202] w-full lg:h-full h-[770px] relative overflow-hidden">
       <div className="absolute hidden lg:flex lg:w-[350px] lg:h-[350px] h-[200px] w-[200px] rounded-[50%]  right-[50px] top-[70px] bg-yellow-400/10 filter animate-blob blur-[600px] z-10"></div>
       <div className="absolute hidden lg:flex lg:w-[150px] lg:h-[150px] h-[100px] w-[100px] rounded-[50%]  bottom-[50px] lg:left-[500px] bg-yellow-400/30 animate-blob filter blur-[300px]"></div>
       <div className="max-w-[1200px] w-[80%] h-full mx-auto flex-col">
@@ -42,10 +42,10 @@ return (
               Nigeria
             </div>
             <h1 className="text-white md:hidden text-2xl font-sfr w-full text-center mt-20 mb-20">
-              <h1 className="text-[45px] font-black text-yellow-400">Hello!</h1>
+              <h1 className="text-[45px] font-black text-yellow-400 mb-5">Hello!</h1>
               i'm Damilola Jibowu,
               <br />
-              FrontEnd developer based <br /> in Lagos
+               a frontEnd developer based <br /> in Lagos
             </h1>
             <p className="md:block hidden text-[#625C5C] md:text-start text-center sm:w-[200px] lg:w-[400px] md:w-[300px] md:mb-10 mb-5">
               I ‘m Damilola, a professional web developer with interest in
