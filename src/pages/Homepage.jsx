@@ -5,6 +5,8 @@ import { FaChevronDown } from "react-icons/fa";
 import Piechart from "../component/Piechart";
 import {Link} from 'react-scroll'
 import Navigator from "../component/Navigator";
+import { HiMenu} from "react-icons/hi";
+import { HiOutlineX } from "react-icons/hi";
 
 const Homepage = () => {
 
@@ -12,9 +14,22 @@ return (
     <section id="home" className="home-circle bg-[#020202] w-full lg:h-full h-[770px] relative overflow-hidden">
       <div className="absolute hidden lg:flex lg:w-[350px] lg:h-[350px] h-[200px] w-[200px] rounded-[50%]  right-[50px] top-[70px] bg-yellow-400/10 filter animate-blob blur-[600px] z-10"></div>
       <div className="absolute hidden lg:flex lg:w-[150px] lg:h-[150px] h-[100px] w-[100px] rounded-[50%]  bottom-[50px] lg:left-[500px] bg-yellow-400/30 animate-blob filter blur-[300px]"></div>
+      <div className="w-full  bg-white/5  lg:hidden flex justify-end absolute h-full right-0 z-10 backdrop-blur-sm  ">
+          <ul className="bg-white/50 backdrop-blur-2xl w-[200px] border border-1 rounded-l-2xl pt-10 text-lg ">
+            <li className="absolute right-2 top-2 cursor-pointer"><HiOutlineX size="30px" /></li>
+            <li className=" w-full indent-4 mb-2 cursor-pointer">Home</li>
+            <li className=" w-full indent-4 mb-2 cursor-pointer">About</li>
+            <li className=" w-full indent-4 mb-2 cursor-pointer">Services</li>
+            <li className=" w-full indent-4 mb-2 cursor-pointer">Client</li>
+            <li className=" w-full indent-4 mb-2 cursor-pointer">Hire me</li>
+          </ul>
+      </div>
       <div className="max-w-[1200px] w-[80%] h-full mx-auto flex-col">
         <nav className="w-[100%] h-[40px] lg:h-[60px] px-5 flex relative items-center justify-between border-dashed text-sm md:text-lg border-t-0 border-[#443F3F]  border-[1px] rounded-b-3xl ">
           <h2 className="text-md text-white font-black">Damilola</h2>
+          <div className="lg:hidden text-white cursor-pointer">
+            <HiMenu size="20px"/>
+          </div>
           <ul className="w-[400px]  md:flex justify-between hidden">
             <li className="cursor-pointer hover:bg-yellow-400 transition-all duration-300 hover:text-black font-semibold  w-[70px] text-sm py-1 rounded-lg text-center text-white">
               Home
@@ -36,12 +51,11 @@ return (
         <div className="w-full h-[715px] grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col justify-center md:m-0 my-10 md:items-start items-center lg:items-start">
             <div className="text-white text-start md:text-start font-sfr font-bold text-4xl md:block hidden md:text-5xl lg:text-6xl mb-5 s md:mb-10">
-              {" "}
-              <h1 className="text-yellow-400 text-[4.80rem]">Hello!</h1> I’m a
+              <h1 className="text-yellow-400 text-[4.80rem] ">Hello!</h1> I’m a
               Frontend Developer from Lagos <br />
               Nigeria
             </div>
-            <h1 className="text-white md:hidden text-2xl font-sfr w-full text-center mt-20 mb-20">
+            <h1 className="text-white md:hidden text-2xl font-sfr w-full text-center mt-20 mb-20 min-w-[300px]">
               <h1 className="text-[45px] font-black text-yellow-400 mb-5">Hello!</h1>
               i'm Damilola Jibowu,
               <br />
